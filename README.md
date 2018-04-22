@@ -1,6 +1,6 @@
 # mars-rover-python
 
-##Mars Rover Kata
+## Mars Rover Kata
 
 You are on a team programming the remotely controlled Mars Rover robot. 
 Given an initial starting point (x,y) and a list of commands, you want to be able to calculate what the end point (x’, y’) will be. 
