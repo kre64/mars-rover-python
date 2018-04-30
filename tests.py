@@ -1,7 +1,8 @@
 import unittest
 
-from marsrover import Rover, Position, Direction
-
+from rover import Rover
+from position import Position
+from direction import  Direction
 
 class RoverTest(unittest.TestCase):
 
