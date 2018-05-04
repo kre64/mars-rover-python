@@ -57,7 +57,7 @@ class RoverTest(unittest.TestCase):
         rover = Rover(position, direction)
         commands = ('r', 'f', 'f', 'f')
         rover.execute(commands)
-        self.assertEquals(Position(0, 3), rover.get_position())
+        self.assertEquals(Position(3, 0), rover.get_position())
         self.assertEquals(Direction.E, rover.get_direction())
 
     def test_do_a_lot_of_silly_stuff(self):
@@ -66,7 +66,7 @@ class RoverTest(unittest.TestCase):
         rover = Rover(position, direction)
         commands = ('r', 'f', 'f', 'f', 'b', 'r')
         rover.execute(commands)
-        self.assertEquals(Position(0, 2), rover.get_position())
+        self.assertEquals(Position(0, -2), rover.get_position())
         self.assertEquals(Direction.N, rover.get_direction())
 
 if __name__ == '__main__':
