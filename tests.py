@@ -12,7 +12,7 @@ class RoverTest(unittest.TestCase):
         rover = Rover(position, direction)
         commands = ('f')
         rover.execute(commands)
-        self.assertEquals(Position(-1, 0), rover.position())
+        self.assertEquals(Position(0, 1), rover.position())
         self.assertEquals(Direction.N, rover.direction())
 
     def test_move_one_forward_one_backward(self):
