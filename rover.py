@@ -1,3 +1,3 @@
 class Rover:
-    def execute(commands):
+    def execute(self, commands):
         print("implement me!")

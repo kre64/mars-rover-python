@@ -1,3 +1,4 @@
 class Position:
-    def todo():
-        print("implement me!")
+    def __init__(self, x, y):
+       self.x = x
+       self.y = y
