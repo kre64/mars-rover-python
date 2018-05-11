@@ -111,7 +111,7 @@ class RoverTest(unittest.TestCase):
         rover = Rover(position, direction)
         commands = ('r', 'f', 'f', 'f', 'b', 'r')
         rover.execute(commands)
-        self.assertEquals(Position(0, -2), rover.get_position())
+        self.assertEquals(Position(-2, 0), rover.get_position())
         self.assertEquals(Direction.N, rover.get_direction())
 
 if __name__ == '__main__':
