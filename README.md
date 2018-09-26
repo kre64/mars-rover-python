@@ -16,6 +16,8 @@ Using the test file as guidance, please develop a program that will calculate th
 
 "B" -> go backward
 
+Note: These are not simple Up, Down, Left, Right commands! In order to go up, the rover must face up (either by turning left or right, depending on its direction) and then execute a "F" command. Keep this in mind while designing tests. 
+
 ### Cardinal Directions
 East
 
@@ -28,3 +30,11 @@ South
 ## To Execute tests
 
 Run `python tests.py`
+
+
+## Advanced Post Passing Tests Tasks
+
+1. Imagine the grid is infinite -- if the rover receives an "F" command when it is facing right on the rightmost edge of the grid, the rover should appear on the leftmost edge of the grid in the same Y positon in the grid, still facing right. This "wrapping" should hold for all corners of the board. 
+
+2. Implement a visualization that shows the user where they are at each stage of the string of commands. You have a lot of freedom here! You may start with printing positions to the command line, and ideally you will wire up a Flask app that gives users a frontend from the web!
+
