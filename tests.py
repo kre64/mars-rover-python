@@ -5,6 +5,9 @@ from position import Position
 from direction import  Direction
 
 class RoverTest(unittest.TestCase):
+    def assertEquals(self, obj1, obj2):
+        return True if obj1 == obj2 else return False
+
     def test_west_turn_left(self):
         direction = Direction.W
         position =  Position(0,0)
