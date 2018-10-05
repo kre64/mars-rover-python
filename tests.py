@@ -11,6 +11,7 @@ class RoverTest(unittest.TestCase):
     def assertEquals(self, obj1, obj2):
         return True if obj1 == obj2 else False
 
+    # @unittest.skip("unskip this line when you are ready for the next test")
     def test_west_turn_left(self):
         direction = Direction.W
         position = Position(0,0)
@@ -20,6 +21,7 @@ class RoverTest(unittest.TestCase):
         self.assertEquals(Position(0, 0), rover.get_position())
         self.assertEquals(Direction.S, rover.get_direction())
 
+    # @unittest.skip("unskip this line when you are ready for the next test")
     def test_west_turn_right(self):
         direction = Direction.W
         position = Position(0,0)
@@ -29,6 +31,7 @@ class RoverTest(unittest.TestCase):
         self.assertEquals(Position(0, 0), rover.get_position())
         self.assertEquals(Direction.N, rover.get_direction())
 
+    # @unittest.skip("unskip this line when you are ready for the next test")
     def test_east_turn_left(self):
         direction = Direction.E
         position = Position(0,0)
@@ -38,6 +41,7 @@ class RoverTest(unittest.TestCase):
         self.assertEquals(Position(0, 0), rover.get_position())
         self.assertEquals(Direction.N, rover.get_direction())
 
+    # @unittest.skip("unskip this line when you are ready for the next test")
     def test_east_turn_right(self):
         direction = Direction.E
         position = Position(0,0)
@@ -47,7 +51,7 @@ class RoverTest(unittest.TestCase):
         self.assertEquals(Position(0, 0), rover.get_position())
         self.assertEquals(Direction.S, rover.get_direction())
 
-    @unittest.skip("unskip this line when you are ready for the next test")
+    # @unittest.skip("unskip this line when you are ready for the next test")
     def test_move_one_forward(self):
         direction = Direction.N
         position = Position(0,0)
@@ -57,7 +61,7 @@ class RoverTest(unittest.TestCase):
         self.assertEquals(Position(0, 1), rover.get_position())
         self.assertEquals(Direction.N, rover.get_direction())
 
-    @unittest.skip("unskip this line when you are ready for the next test")
+    # @unittest.skip("unskip this line when you are ready for the next test")
     def test_move_one_forward_one_backward(self):
         direction = Direction.N
         position = Position(0,0)
@@ -67,7 +71,7 @@ class RoverTest(unittest.TestCase):
         self.assertEquals(Position(0, 0), rover.get_position())
         self.assertEquals(Direction.N, rover.get_direction())
 
-    @unittest.skip("unskip this line when you are ready for the next test")
+    # @unittest.skip("unskip this line when you are ready for the next test")
     def test_move_one_forward_two_backward_north(self):
         direction = Direction.N
         position = Position(0,0)
@@ -77,7 +81,7 @@ class RoverTest(unittest.TestCase):
         self.assertEquals(Position(0, -1), rover.get_position())
         self.assertEquals(Direction.N, rover.get_direction())
 
-    @unittest.skip("unskip this line when you are ready for the next test")
+    # @unittest.skip("unskip this line when you are ready for the next test")
     def test_move_one_forward_two_backward_turn_left(self):
         direction = Direction.N
         position = Position(0,0)
